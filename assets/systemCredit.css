@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+body{
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #212121;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F6F6;
+    padding: 30px;
+    max-width: 90%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form div label{
+    margin-bottom: 5px;
+}
+
+form div input{
+    font-family: 'Merriweather Sans', sans-serif;
+    border-style: none;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+form .buttons button{
+    margin-bottom: 20px;
+}
+
+button{
+    border-style: none;
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color: #D4AC0D;
+    padding: 10px;
+    border-radius: 20px;
+    width: 90%;
+}
+
+button:hover{
+    background-color: #F4D03F;
+    cursor: pointer;
+}
+
+.buttons button:first-child{
+    margin-right: 5px;
+}
+
+form.simulador{
+    display: none;
+}
+
+p#message{
+    margin-top: 10px;
+    color: #C0392B;
+}
+
+
+@media (min-width:920px) {
+    form{
+        min-width: 50%; 
+    }
+    form div{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+    }
+    form div input{
+        width: 50%;
+    }
+    .buttons{
+        justify-content: space-evenly;
+    }
+}
+
